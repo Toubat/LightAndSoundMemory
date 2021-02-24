@@ -23,3 +23,35 @@ button {
   padding: 15px;
   border-radius: 10px;
 }
+
+.hidden {
+  display: none;
+}
+
+#button1 {
+  background: lightgreen;
+}
+#button1:active {
+  background:green;
+}
+
+#button2 {
+  background: lightblue;
+}
+#button2:active {
+  background:blue;
+}
+
+#button3 {
+  background: pink;
+}
+#button3:active {
+  backgtound: red;
+}
+
+#button4 {
+  background: lightyellow;
+}
+#button4:active {
+  backgtound: yellow;
+}
