@@ -20,19 +20,19 @@
       Welcome to the game! Pressing button to start!
     </p>
     
-    <button id="startBtn">
+    <button id="startBtn" onclick="startGame()">
       Start
     </button>
     
-    <button id="stopBtn" class="hidden">
-      End
+    <button id="stopBtn" class="hidden" onclick="stopGame()">
+      Stop
     </button>
     
     <div id="gameButtonArea">
-      <button id="button1"></button>
-      <button id="button2"></button>
-      <button id="button3"></button>
-      <button id="button4"></button>
+      <button id="button1" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
+      <button id="button2" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
+      <button id="button3" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
+      <button id="button4" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
     </div>
     
   </body>
