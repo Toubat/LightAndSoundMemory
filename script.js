@@ -1,9 +1,11 @@
 // Global constants
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
+const listSize = 8;
 
 // Global Variables
-var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
+var pattern;
+var mistakes = 0;
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
@@ -11,11 +13,24 @@ var volume = 0.5; // b.t. 0.0 and 1.0
 var guessCounter = 0;
 var clueHoldTime = 500; //how long to hold each clue's light/sound
 
-function getIntInRange()
+function getRandInt() {
+  return Math.floor(Math.random() * 8) + 1;
+}
+
+function getListWithLength(length) {
+  var list = [];
+  for (let i = 0; i < length; i++){
+    list.push(getRandInt());
+  }
+  console.log(list);
+  return list;
+}
 
 function startGame() {
   // initialize game variables
+  pattern = getListWithLength(listSize);
   progress = 0;
+  mistakes = 0;
   gamePlaying = true;
   clueHoldTime = 500;
   // swap the Start and Stop buttons
@@ -80,6 +95,7 @@ function guess(btn) {
   }
   // add game logic here
   if (btn != pattern[guessCounter]) {
+    if (mistakes )
     loseGame();
     stopGame();
     return;
