@@ -39,10 +39,14 @@ function winGame() {
 }
 // Sound Synthesis Functions
 const freqMap = {
-  1: 261.6,
-  2: 329.6,
-  3: 392,
-  4: 466.2
+  1: 261.63,
+  2: 293.66,
+  3: 329.63,
+  4: 349.23,
+  5: 392.00,
+  6: 440.00,
+  7: 493.88,
+  8: 523.25,
 }
 
 function playTone(btn,len) { 

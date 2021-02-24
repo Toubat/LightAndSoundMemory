@@ -18,8 +18,8 @@ button {
 }
 
 #gameButtonArea > button {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   padding: 15px;
   border-radius: 10px;
 }
@@ -51,6 +51,13 @@ button {
 
 #button4 {
     background: lightyellow;
+}
+#button4:active, #button4.lit {
+    background:yellow;
+}
+
+#button4 {
+    background: #A52A2A;
 }
 #button4:active, #button4.lit {
     background:yellow;
