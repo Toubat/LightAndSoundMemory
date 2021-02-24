@@ -39,19 +39,19 @@ button {
   background: lightblue;
 }
 #button2:active {
-  background:blue;
+  background: blue;
 }
 
 #button3 {
   background: pink;
 }
 #button3:active {
-  backgtound: red;
+    background:red;
 }
 
 #button4 {
-  background: lightyellow;
+    background: lightyellow;
 }
 #button4:active {
-  backgtound: yellow;
+    background:yellow;
 }
