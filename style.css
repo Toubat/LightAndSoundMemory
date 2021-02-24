@@ -53,12 +53,33 @@ button {
     background: lightyellow;
 }
 #button4:active, #button4.lit {
-    background:yellow;
+    background: yellow;
 }
 
-#button4 {
-    background: #A52A2A;
+#button5 {
+    background: #008B8B;
 }
-#button4:active, #button4.lit {
-    background:yellow;
+#button5:active, #button5.lit {
+    background: #00FFFF;
+}
+
+#button6 {
+    background: #8B008B;
+}
+#button6:active, #button6.lit {
+    background: #9932CC;
+}
+
+#button7 {
+    background: #DCDCDC;
+}
+#button7:active, #button7.lit {
+    background: #FFFAF0;
+}
+
+#button8 {
+    background: #DAA520;
+}
+#button8:active, #button8.lit {
+    background: #FFD700;
 }

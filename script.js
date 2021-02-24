@@ -1,5 +1,4 @@
 // Global constants
-const clueHoldTime = 333; //how long to hold each clue's light/sound
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
@@ -10,12 +9,15 @@ var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5; // b.t. 0.0 and 1.0
 var guessCounter = 0;
+var clueHoldTime = 500; //how long to hold each clue's light/sound
 
+function getIntInRange()
 
 function startGame() {
   // initialize game variables
   progress = 0;
   gamePlaying = true;
+  clueHoldTime = 500;
   // swap the Start and Stop buttons
   document.getElementById('startBtn').classList.add('hidden');
   document.getElementById("stopBtn").classList.remove("hidden");
@@ -118,6 +120,7 @@ function playClueSequence() {
     delay += clueHoldTime 
     delay += cluePauseTime;
   }
+  clueHoldTime -= 50;
 }
 
 //Page Initialization
