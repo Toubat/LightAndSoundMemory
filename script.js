@@ -95,10 +95,15 @@ function guess(btn) {
   }
   // add game logic here
   if (btn != pattern[guessCounter]) {
-    if (mistakes )
-    loseGame();
-    stopGame();
-    return;
+    if (mistakes == 2) {
+      loseGame();
+      stopGame();
+      return;
+    } else {
+      mistakes++;
+      alert('Wrong answer. You have made ' + mistakes + '/3 mistakes! Try Again from the beginning!');
+      guessCounter = 0;
+    }
   } else if (guessCounter < progress) {
     guessCounter++;
   } else if (progress != pattern.length - 1) {
