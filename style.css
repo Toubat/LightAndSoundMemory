@@ -9,5 +9,10 @@ body {
 
 h1 {
   font-style: italic;
-  color: #373fff;
+  font-family: verdana, arial, sans-serif; 
+}
+
+#gameButtonArea > button {
+  padding: 15px;
+  border-radius: 7px;
 }
