@@ -16,8 +16,10 @@ How we can actually set those colorful buttons movable so that user can drag the
 
 How do we build a project involving multiple webpages and use javascript to nevigate to each page?
 
-How to change the background of the body 
+What are the complete workflow and procudures of building a standard web project in a team?
+
+
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
 
-The most time-consuming part is building additional feature. Specifically, adding more syllables with varying frequency so as to emulate the available pitches of a real instruments. I seached a lot of information online, and finally I found the exact frequency of "do re mi fa so la si". I updated frequency map and added more buttons on index.html. It also cost me a lot of time in finding additional pairs of color (one light, one dark) for each of the newly added button. Finally, refactoring guess() method by adding number of available of mistakes and reordering logics to reduce lines of code also takes a lot of time. Overall, I feel like designing a website is quite similar to designing mobile phone app. Both have to create a layout file, and handle logics of each UI component with its corresponding code, and I feel like I'm really comfortable with doing web-development in this assignment.
+The most time-consuming part is building additional feature. Specifically, adding more syllables with varying frequency so as to emulate the available pitches of a real instruments. I seached a lot of information online, and finally I found the exact frequency of "do re mi fa so la si". I updated frequency map and added more buttons on index.html. It also cost me a lot of time in finding additional pairs of color (one light, one dark) for each of the newly added button. Finally, refactoring guess() method by adding number of available of mistakes and reordering logics to reduce lines of code also takes a lot of time. Overall, I feel like designing a website is quite similar to designing mobile phone app. Both have to create a layout file, and handle logics of each UI component with its corresponding code, and I feel like I'm really comfortable with doing web-development in this assignment, and I'm confident in making progress for my web-design skills based on my past experience in mobile app design, and knowledge of javascript.
